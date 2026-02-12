@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff4e8b,#ff99c8);
+    font-family:Arial;
+    overflow:hidden;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    width:350px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+h1{color:#ff2e63;}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    margin:10px;
+    cursor:pointer;
+}
+
+.yes{background:#ff2e63;color:white;}
+.no{background:gray;color:white;}
+
+.heart{
+    position:absolute;
+    color:red;
+    animation:float 5s linear infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(100vh);}
+    100%{transform:translateY(-10vh);}
+}
